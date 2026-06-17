@@ -1,26 +1,27 @@
-import Image from 'next/image'
 import RevealWrapper from './RevealWrapper'
+import MediaSlot from './MediaSlot'
 
 export default function ArteSection() {
   return (
-    <section id="arte" className="arte section-dark">
-      {/* strip */}
-      <RevealWrapper className="section-strip section-light">
-        <span className="section-strip-number font-anton">03</span>
-        <span className="section-strip-title font-anton">ARTE</span>
-        <span className="section-strip-subtitle font-crimson">Maquillaje · Vestuario · Arte</span>
+    <section id="arte" className="section-pad">
+      <RevealWrapper>
+        <div className="work-head">
+          <h2 className="work-title font-anton">ARTE</h2>
+          <div className="work-credit">
+            <div className="role font-crimson">Maquillaje · Vestuario</div>
+            <div className="name font-mono">Dirección de Arte</div>
+          </div>
+        </div>
       </RevealWrapper>
 
-      <RevealWrapper scale>
-        <Image
-          src="/assets/dan/arte-bg.jpg"
-          alt="Arte — maquillaje, vestuario, arte"
-          width={1440}
-          height={810}
-          className="arte-full"
-          style={{ width: '100%', height: 'auto' }}
-        />
-      </RevealWrapper>
+      <div className="work-grid cols-3">
+        <RevealWrapper scale><MediaSlot label="MAQUILLAJE · 3:4" ratio="portrait" /></RevealWrapper>
+        <RevealWrapper scale delay={1}><MediaSlot label="VESTUARIO · 3:4" ratio="portrait" /></RevealWrapper>
+        <RevealWrapper scale delay={2}><MediaSlot label="ARTE · 3:4" ratio="portrait" /></RevealWrapper>
+        <RevealWrapper scale><MediaSlot label="DETALLE · 1:1" ratio="square" /></RevealWrapper>
+        <RevealWrapper scale delay={1}><MediaSlot label="DETALLE · 1:1" ratio="square" /></RevealWrapper>
+        <RevealWrapper scale delay={2}><MediaSlot label="DETALLE · 1:1" ratio="square" /></RevealWrapper>
+      </div>
     </section>
   )
 }

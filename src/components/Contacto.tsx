@@ -4,42 +4,43 @@ import RevealWrapper from './RevealWrapper'
 export default function Contacto() {
   return (
     <>
-      <section id="contacto" className="contacto section-light">
+      <section id="contacto" className="contacto">
         <RevealWrapper scale>
           <Image
-            src="/assets/dan/logo.png"
-            alt="Art Design DAN"
-            width={320}
-            height={120}
+            src="/assets/dan/logos/logo-dan-black.png"
+            alt="DAN — Art Design"
+            width={413}
+            height={540}
             className="contacto-logo"
-            style={{ width: '100%', height: 'auto' }}
           />
         </RevealWrapper>
 
         <RevealWrapper delay={1}>
-          <p className="contacto-tagline font-crimson">
-            Diseñadora de imagen · Artista multidisciplinaria · León, Gto.
-          </p>
-        </RevealWrapper>
-
-        <RevealWrapper delay={2}>
           <div className="contacto-links">
             <a
               href="https://instagram.com/dania.garcia__"
               target="_blank"
               rel="noopener noreferrer"
-              className="contacto-link font-mono"
+              className="contacto-link"
               data-hover
             >
-              @dania.garcia__
+              <Image
+                src="/assets/dan/texto/08-instagram-daniagarcia.png"
+                alt="@dania.garcia__"
+                width={807}
+                height={212}
+                className="contacto-text"
+              />
             </a>
-            <span className="contacto-gold font-mono">✶</span>
-            <a
-              href="tel:+524778436838"
-              className="contacto-link font-mono"
-              data-hover
-            >
-              (477) 843 683 8
+
+            <a href="tel:+524778436834" className="contacto-link" data-hover>
+              <Image
+                src="/assets/dan/texto/09-telefono-477-843-6834.png"
+                alt="477 843 6834"
+                width={807}
+                height={212}
+                className="contacto-text"
+              />
             </a>
           </div>
         </RevealWrapper>

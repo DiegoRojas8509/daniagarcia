@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Art Design ✶ DAN',
     description: 'Portafolio de Dania García — imagen, arte, film y eventos.',
-    images: ['/assets/dan/og.jpg'],
+    images: ['/assets/dan/logos/logo-dan-black.png'],
     locale: 'es_MX',
     type: 'website',
   },
