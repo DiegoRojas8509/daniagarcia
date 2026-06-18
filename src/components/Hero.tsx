@@ -15,13 +15,6 @@ export default function Hero() {
         />
       </RevealWrapper>
 
-      <RevealWrapper delay={2}>
-        <p className="hero-sub font-crimson">
-          "La imagen es un lenguaje capaz de comunicar,
-          emocionar y construir significado."
-        </p>
-      </RevealWrapper>
-
       <RevealWrapper delay={3}>
         <p className="hero-scroll font-mono">Scroll ↓</p>
       </RevealWrapper>
