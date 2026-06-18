@@ -263,6 +263,6 @@ El prototipo `dan_portfolio.html` es un archivo standalone (~1.8MB) que incluye:
 
 Para verlo: abrir `dan_portfolio.html` en cualquier browser moderno.
 
----
+----
 
 *Art Design ✶ DAN — "La imagen es un lenguaje capaz de comunicar, emocionar y construir significado."*
